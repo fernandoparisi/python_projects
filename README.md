@@ -9,10 +9,10 @@ El análisis se realiza sobre el dataset **FD001** de la serie CMAPSS (Commercia
 
 ## Contenido del Repositorio
 
--   `notebooks/`: Contiene los notebooks de Jupyter con el análisis exploratorio de datos (EDA), preprocesamiento, entrenamiento de modelos, evaluación y visualización.
-    -   `NASA 0001.ipynb` 
--   `data/`:  `train_FD001.txt`, `test_FD001.txt` y `RUL_FD001`
-
+-   `NASA 0001.ipynb` : Contiene el notebook de Jupyter con el análisis exploratorio de datos (EDA), preprocesamiento, entrenamiento de modelos, evaluación y visualización. 
+-   `train_FD001.txt`, `test_FD001.txt` y `RUL_FD001` : Son los datasets del proyecto. 
+-   `Damage Propagation Modeling.pdf`: El paper original de la NASA que describe el dataset CMAPSS y sus aplicaciones.
+      
 ## Modelos Evaluados
 
 Se evaluó un conjunto diverso de modelos de Machine Learning, incluyendo:
@@ -53,9 +53,9 @@ The analysis is performed on the **FD001** dataset from NASA's CMAPSS (Commercia
 
 ## Repository Contents
 
--   `notebooks/`: Contains Jupyter notebooks with exploratory data analysis (EDA), preprocessing, model training, evaluation, and visualization.
-    -   `NASA 0001.ipynb`
--   `data/`: Includes `train_FD001.txt`, `test_FD001.txt`, and `RUL_FD001.txt` (assuming `RUL_FD001` refers to a `.txt` file, please adjust if it's another format).
+- `NASA 0001.ipynb`: _Contains the Jupyter notebook with exploratory data analysis (EDA), preprocessing, model training, evaluation, and visualization._
+- `train_FD001.txt`, `test_FD001.txt`, and `RUL_FD001`: _These are the project datasets._
+- `Damage Propagation Modeling.pdf`: _The original NASA paper describing the CMAPSS dataset and its applications._
 
 ## Models Evaluated
 
