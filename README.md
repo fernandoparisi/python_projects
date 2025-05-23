@@ -43,44 +43,44 @@ Para mejorar la precisión y la capacidad de generalización del modelo, los sig
 
 ---
 
-# Remaining Useful Life (RUL) Prediction for Turbofan Engines
+# _Remaining Useful Life (RUL) Prediction for Turbofan Engines_
 
-## Project Description
+## _Project Description_
 
-This repository contains a Machine Learning project focused on predicting the **Remaining Useful Life (RUL)** of turbofan engines. The objective is to estimate how many operational cycles an engine has left before a functional failure, using operational sensor data. This type of prediction is crucial for predictive maintenance, enabling optimization of service times and reduction of operational costs.
+_This repository contains a Machine Learning project focused on predicting the **Remaining Useful Life (RUL)** of turbofan engines. The objective is to estimate how many operational cycles an engine has left before a functional failure, using operational sensor data. This type of prediction is crucial for predictive maintenance, enabling optimization of service times and reduction of operational costs._
 
-The analysis is performed on the **FD001** dataset from NASA's CMAPSS (Commercial Modular Aero-Propulsion System Simulation) series, a standard benchmark in the field of system health prognostics.
+_The analysis is performed on the **FD001** dataset from NASA's CMAPSS (Commercial Modular Aero-Propulsion System Simulation) series, a standard benchmark in the field of system health prognostics._
 
-## Repository Contents
+## _Repository Contents_
 
-- `NASA 0001.ipynb`: _Contains the Jupyter notebook with exploratory data analysis (EDA), preprocessing, model training, evaluation, and visualization._
-- `train_FD001.txt`, `test_FD001.txt`, and `RUL_FD001`: _These are the project datasets._
-- `Damage Propagation Modeling.pdf`: _The original NASA paper describing the CMAPSS dataset and its applications._
+- _`NASA 0001.ipynb`_: _Contains the Jupyter notebook with exploratory data analysis (EDA), preprocessing, model training, evaluation, and visualization._
+- _`train_FD001.txt`, `test_FD001.txt`, and `RUL_FD001`_: _These are the project datasets._
+- _`Damage Propagation Modeling.pdf`_: _The original NASA paper describing the CMAPSS dataset and its applications._
 
-## Models Evaluated
+## _Models Evaluated_
 
-A diverse set of Machine Learning models were evaluated, including:
+_A diverse set of Machine Learning models were evaluated, including:_
 
--   Linear Regression
--   K-Nearest Neighbors (KNN)
--   Random Forest
--   Gradient Boosting
--   XGBoost
--   LightGBM
+- _Linear Regression_
+- _K-Nearest Neighbors (KNN)_
+- _Random Forest_
+- _Gradient Boosting_
+- _XGBoost_
+- _LightGBM_
 
-## Key Conclusions
+## _Key Conclusions_
 
-The analysis revealed important insights into the models' performance in RUL prediction:
+_The analysis revealed important insights into the models' performance in RUL prediction:_
 
--   **Predominant Overfitting:** Models such as **Random Forest and LightGBM** showed significant overfitting. Despite their high training performance, they exhibited a sharp drop in accuracy on the test set (R² ≈ 0.32-0.34).
--   **Potential of Boosting Models:** **Gradient Boosting and XGBoost** demonstrated the best initial performance on the test set (R² ≈ 0.37-0.38), with visually closer predictions to actual values. This positions them as the most promising candidates for optimization.
--   **Challenge with High RULs:** A consistent observation is the increased difficulty in accurately predicting high RULs (engines in early/healthy phases of their lifespan), a common challenge in this type of problem.
--   **Distribution Disparity:** The actual RUL distribution differs between the training set (more concentrated at low RULs) and the test set (a higher proportion of high RULs), which influences model behavior.
+- _**Predominant Overfitting:** Models such as **Random Forest and LightGBM** showed significant overfitting. Despite their high training performance, they exhibited a sharp drop in accuracy on the test set (R² ≈ 0.32-0.34)._
+- _**Potential of Boosting Models:** **Gradient Boosting and XGBoost** demonstrated the best initial performance on the test set (R² ≈ 0.37-0.38), with visually closer predictions to actual values. This positions them as the most promising candidates for optimization._
+- _**Challenge with High RULs:** A consistent observation is the increased difficulty in accurately predicting high RULs (engines in early/healthy phases of their lifespan), a common challenge in this type of problem._
+- _**Distribution Disparity:** The actual RUL distribution differs between the training set (more concentrated at low RULs) and the test set (a higher proportion of high RULs), which influences model behavior._
 
-## Next Steps
+## _Next Steps_
 
-To improve model accuracy and generalization capability, the following steps are crucial:
+_To improve model accuracy and generalization capability, the following steps are crucial:_
 
-1.  **Hyperparameter Tuning:** Optimize boosting models (Gradient Boosting, XGBoost).
-2.  **Advanced Feature Engineering:** Develop new features from sensor data to enhance the degradation signal.
-3.  **Neural Network Analysis:** Apply LSTM models to leverage their capability with sequential data.
+1. _Hyperparameter Tuning: Optimize boosting models (Gradient Boosting, XGBoost)._
+2. _Advanced Feature Engineering: Develop new features from sensor data to enhance the degradation signal._
+3. _Neural Network Analysis: Apply LSTM models to leverage their capability with sequential data._
